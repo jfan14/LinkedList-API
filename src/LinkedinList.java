@@ -149,10 +149,13 @@ public class LinkedinList {
     //================Print the List==================//
     public void printList() {
         Node temp = first;
+        System.out.print("Your Linked List is: \t" );
         while(temp != null) {
-            System.out.println(temp.data);
+
+            System.out.print(temp.data + "\t");
             temp = temp.next;
         }
+        System.out.println();
     }
     //================Insert a node into List==================//
     public void insertNode(int position, int data) {
@@ -274,10 +277,12 @@ public class LinkedinList {
             temp.next = n1;
         }
         head = head.next;
+        System.out.print("Your Result is: \t");
         while(head != null) {
-            System.out.println(head.data);
+            System.out.print(head.data + "\t");
             head = head.next;
         }
+        System.out.println();
     }
     //================Merge two Linked List without third list==================//
     public void mergeList2(Node n1, Node n2) {
@@ -297,10 +302,12 @@ public class LinkedinList {
         }else{
             temp.next = n1;
         }
+        System.out.print("Your Result is: \t");
         while(head != null) {
-            System.out.println(head.data);
+            System.out.print(head.data + "\t");
             head = head.next;
         }
+        System.out.println();
     }
     //================Merge two Linked List and Sort==================//
     public void mergeListSort(Node n1, Node n2) {
@@ -322,10 +329,12 @@ public class LinkedinList {
             }
         }
         head = head.next;
+        System.out.println("Your Result is: \t");
         while(head != null) {
-            System.out.println(head.data);
+            System.out.print(head.data + "\t");
             head = head.next;
         }
+        System.out.println();
     }
     //================Merge two Linked List and Sort without third list==================//
     public void mergeListSort2(Node n1, Node n2) {
@@ -347,10 +356,12 @@ public class LinkedinList {
                 temp.next = n1;
             }
         }
+        System.out.println("Your Result is: \t");
         while(head != null) {
-            System.out.println(head.data);
+            System.out.print(head.data + "\t");
             head = head.next;
         }
+        System.out.println();
     }
     //================Search and Delete==================//
     public void searchDelete(int data) {
@@ -366,10 +377,12 @@ public class LinkedinList {
                 temp = null;
                 System.out.println("Deleted");
                 Node tempy = first;
+                System.out.println("Your Result is: \t");
                 while(tempy != null) {
-                    System.out.println(tempy.data);
+                    System.out.print(tempy.data + "\t");
                     tempy = tempy.next;
                 }
+                System.out.println();
                 return;
             }else{
                 Node prev = temp;
@@ -382,10 +395,12 @@ public class LinkedinList {
                     temp = null;
                     System.out.println("Deleted");
                     Node tempy = first;
+                    System.out.print("Your Result is: \t");
                     while(tempy != null) {
-                        System.out.println(tempy.data);
+                        System.out.print(tempy.data + "\t");
                         tempy = tempy.next;
                     }
+                    System.out.println();
                     return;
                 }
                 prev = temp;
@@ -407,6 +422,7 @@ public class LinkedinList {
             head = next;
         }
         Node t = prev;
+        System.out.print("Your Result is: \t");
         while(t != null) {
             System.out.println(t.data);
             t = t.next;
